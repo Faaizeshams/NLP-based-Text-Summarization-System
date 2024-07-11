@@ -54,7 +54,7 @@ if st.button("Summarize"):
                     else:
                         sentenceValue[sentence] = freq
 
-        if sentenceValue:  # Check if sentenceValue is not empty
+        if sentenceValue:
             maxValue = max(sentenceValue.values())
             for sentence in sentenceValue:
                 sentenceValue[sentence] = sentenceValue[sentence] / maxValue
